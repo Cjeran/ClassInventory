@@ -69,10 +69,7 @@ namespace ClassInventory
             
             if (found)
             {
-                output.Text = players[location].name + " | " +
-                    players[location].age + " | +" +
-                    players[location].team + " | " +
-                    players[location].position;
+                output.Text = players[location].name + " | " + players[location].age + " | +" + players[location].team + " | " + players[location].position;
             } else
             {
                 output.Text = "Player Not Found!";
@@ -85,8 +82,7 @@ namespace ClassInventory
             output.Text = "";
             for(int x = 0; x < players.Count; x++)
             {
-                output.Text = output.Text + players[x].name + " | " +
-                players[x].age + " | " + players[x].team + " | " + players[x].position + "\n";
+                output.Text = output.Text + players[x].name + " | " + players[x].age + " | " + players[x].team + " | " + players[x].position + "\n";
             }
         }
     }
